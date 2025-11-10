@@ -37,14 +37,15 @@ public class OrdenacaoPessoas {
         l1.adicionarPessoa("Carla", 12, 1.46f);
         l1.adicionarPessoa("Farias", 55, 1.87f);
         l1.adicionarPessoa("Tereza", 43, 1.56f);
-        l1.adicionarPessoa("Marcelo", 5, 1.05f);
+        l1.adicionarPessoa("Marcus", 10, 1.05f);
         l1.adicionarPessoa("Flávia", 33, 1.42f);
         l1.adicionarPessoa("Pedro", 35, 1.91f);
-        l1.adicionarPessoa("Ana", 65, 1.67f);
+        l1.adicionarPessoa("Júlia", 65, 1.67f);
         l1.adicionarPessoa("José", 76, 1.83f);
 
+        System.out.println(l1.pessoaList);
         System.out.println(l1.ordenarPorIdade() + "\n");
-        System.out.println(l1.ordenarPorAltura());
+//        System.out.println(l1.ordenarPorAltura());
 
 
 

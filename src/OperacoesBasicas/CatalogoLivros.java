@@ -22,8 +22,10 @@ public class CatalogoLivros {
                     pesquisa.add(l);
                 }
             }
+            return pesquisa;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return pesquisa;
     }
 
     public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
@@ -34,8 +36,10 @@ public class CatalogoLivros {
                     pesquisa.add(l);
                 }
             }
+            return pesquisa;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return pesquisa;
     }
 
     public Livro pesquisarPorTitulo(String titulo) {
@@ -47,8 +51,10 @@ public class CatalogoLivros {
                     break;
                 }
             }
+            return pesquisa;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return pesquisa;
     }
 
     public static void main(String[] args) {
