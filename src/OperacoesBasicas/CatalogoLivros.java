@@ -16,9 +16,11 @@ public class CatalogoLivros {
 
     public List<Livro> pesquisarPorAutor(String autor) {
         List<Livro> pesquisa = new ArrayList<>();
-        for (Livro l : livros) {
-            if (l.getAutor().equalsIgnoreCase(autor)) {
-                pesquisa.add(l);
+        if (!livros.isEmpty()) {
+            for (Livro l : livros) {
+                if (l.getAutor().equalsIgnoreCase(autor)) {
+                    pesquisa.add(l);
+                }
             }
         }
         return pesquisa;
@@ -26,19 +28,24 @@ public class CatalogoLivros {
 
     public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
         List<Livro> pesquisa = new ArrayList<>();
-        for (Livro l : livros) {
-            if (l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal) {
-                pesquisa.add(l);
+        if (!livros.isEmpty()) {
+            for (Livro l : livros) {
+                if (l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal) {
+                    pesquisa.add(l);
+                }
             }
         }
         return pesquisa;
     }
 
-    public List<Livro> pesquisarPorTitulo(String titulo) {
-        List<Livro> pesquisa = new ArrayList<>();
-        for (Livro l : livros) {
-            if (l.getTitulo().equalsIgnoreCase(titulo)) {
-                pesquisa.add(l);
+    public Livro pesquisarPorTitulo(String titulo) {
+        Livro pesquisa = null;
+        if (!livros.isEmpty()) {
+            for (Livro l : livros) {
+                if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                    pesquisa = l;
+                    break;
+                }
             }
         }
         return pesquisa;
