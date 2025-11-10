@@ -41,5 +41,26 @@ public class ListaTarefa {
         System.out.println(tarefaList);
     }
 
+    public static void main(String[] args) {
+
+        ListaTarefa tarefasDomesticas = new ListaTarefa();
+
+        tarefasDomesticas.adicionarTarefa("Fazer lista de compras");
+        tarefasDomesticas.adicionarTarefa("Passear com cachorros");
+        tarefasDomesticas.adicionarTarefa("Limpar sujeira animais");
+        tarefasDomesticas.adicionarTarefa("Dar comida para os cães");
+        tarefasDomesticas.adicionarTarefa("Tomar café da manhã");
+        tarefasDomesticas.adicionarTarefa("Tomar remédios");
+
+        tarefasDomesticas.obterDescricoesTarefas();
+
+        tarefasDomesticas.removerTarefa("Tomar remédios");
+
+        tarefasDomesticas.obterDescricoesTarefas();
+
+        System.out.println("O numero total de tarefas é " + tarefasDomesticas.obterNumeroTotalTarefas());
+
+    }
+
 
 }

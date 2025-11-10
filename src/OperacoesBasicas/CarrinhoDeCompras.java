@@ -38,5 +38,28 @@ public class CarrinhoDeCompras {
         System.out.println(comprasList);
     }
 
+    public static void main(String[] args) {
+
+        CarrinhoDeCompras meuCarrinho = new CarrinhoDeCompras();
+
+        meuCarrinho.exibirItens();
+
+        meuCarrinho.adicionarItem("Detergente (500ml)", 2.65, 12 );
+        meuCarrinho.adicionarItem("Água sanitária (2l)", 5.65, 2 );
+        meuCarrinho.adicionarItem("Batata (kg)", 3.92, 1 );
+        meuCarrinho.adicionarItem("Cebola (kg)", 5.92, 1 );
+
+        meuCarrinho.exibirItens();
+
+        meuCarrinho.calcularValorTotal();
+
+        meuCarrinho.removerItem("Cebola (kg)");
+
+        meuCarrinho.exibirItens();
+
+        meuCarrinho.calcularValorTotal();
+
+    }
+
 
 }
