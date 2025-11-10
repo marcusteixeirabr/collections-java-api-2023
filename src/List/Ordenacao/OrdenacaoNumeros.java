@@ -1,9 +1,7 @@
-package Ordenacao;
+package List.Ordenacao;
 
-import java.text.CollationElementIterator;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class OrdenacaoNumeros {
