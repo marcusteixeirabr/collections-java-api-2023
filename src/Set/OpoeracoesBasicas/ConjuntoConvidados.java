@@ -1,9 +1,7 @@
 package Set.OpoeracoesBasicas;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.Callable;
 
 public class ConjuntoConvidados {
     Set<Convidado> convidados;
