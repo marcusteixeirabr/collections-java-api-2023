@@ -3,7 +3,7 @@ package Set.OpoeracoesBasicas;
 import java.util.Objects;
 
 public class Contato {
-    private String nome;
+    private final String nome;
     private int telefone;
 
     public Contato(String nome, int telefone) {
