@@ -66,10 +66,9 @@ public class AgendaContatos {
         System.out.println(agenda.pesquisarPorNome("Gabi"));
         System.out.println();
 
-        agenda.atualizarNumeroContato("Gabi", 912341234);
+        System.out.println("Contato atualizado: " + agenda.atualizarNumeroContato("Gabi", 912341234));
 
         agenda.exibirContatos();
-
     }
 }
 
