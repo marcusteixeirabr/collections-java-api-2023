@@ -1,7 +1,7 @@
 package Map.OperacoesBasicas;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class AgendaContato {
     private Map<String, Integer> agendaContatoMap;
@@ -50,6 +50,7 @@ public class AgendaContato {
         // Adicionando contatos
         agenda.adicionarContato("Alice", 123456789);
         agenda.adicionarContato("Bob", 987654321);
+        agenda.adicionarContato("Alice", 991236578);
         
         // Exibindo contatos
         System.out.println("Contatos na agenda:");
@@ -61,6 +62,9 @@ public class AgendaContato {
         // Exibindo contatos após remoção
         System.out.println("Contatos na agenda após remoção:");
         agenda.exibirContatos();
+
+        // Pesquisando por nome
+        System.out.println("Pesquisando o telefone de Bob: " + agenda.pesquisarPorNome("Bob"));
         
         // Tentando remover de uma agenda vazia
         agenda.removerContato("Bob");
